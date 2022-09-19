@@ -5,9 +5,9 @@
   <mapper namespace="kr.co.work_admin.AdminMapper">
    
    <insert id="work_input_ok">
-   insert into work(workday,workname,workplace,content,start_time,close_time,inwon,gender,pay,writeday)
-   values(#{workday},#{workname},#{workplace},#{content},#{start_time},#{close_time},
-   #{inwon},#{gender},#{pay},now())
+   insert into work(workday,day,workname,workplace,content,start_time,close_time,inwon,gender,pay,writeday,paytype)
+   values(#{workday},#{day},#{workname},#{workplace},#{content},#{start_time},#{close_time},
+   #{inwon},#{gender},#{pay},now(),#{paytype})
    </insert>
   
   </mapper>

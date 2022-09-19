@@ -14,6 +14,12 @@
  section table input[type=text],table input[type=number]{
   width:200px;
  }
+ #pay{
+  width:100px;
+ }
+ #pay::placeholder{
+  text-align:center;
+ }
 </style>
 
 <script>
@@ -53,9 +59,15 @@ onload=function(){
 	   <td>인원</td><td><input type="number" name="inwon" placeholder="인원" min="0" max="50"></td>  </tr><tr>
 	   <td>성별</td><td>
 	     무관 <input type="radio" name="gender" value="0" checked> 남자 <input type="radio" name="gender" value="1"> 여자 <input type="radio" name="gender" value="2">
-	   </td>  </tr><tr>
-	   <td>시급/일급</td><td><input type="text" name="pay" placeholder="일당"></td> </tr><tr>
-	  
+	   </td>  </tr>
+	   <tr>
+	   <td>시급/일급</td>
+	   <td>
+	      일급 <input type="radio" name="paytype" value="0" checked>  시급 <input type="radio" name="paytype" value="1"><br>  
+	    <input type="number" id="pay" name="pay" placeholder="금액">원
+	   </td> 
+	   </tr>
+	   <tr>
 	  <tr>
 	  <td colspan="2" align="center"> <input type="submit" value="작성">  </td>
 	  </tr> 

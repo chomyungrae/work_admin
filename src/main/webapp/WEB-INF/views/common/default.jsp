@@ -126,7 +126,7 @@ footer {
 </head>
 <body>
 	<div id="first">
-		<%-- <div id="right">
+		<div id="right">
 		  <c:if test="${userid == null}">
 			<a href="../member/login">로그인</a> | <a href="../member/member_input">
 				회원가입 </a> |
@@ -137,12 +137,12 @@ footer {
 	       <a href="../logout"> 로그아웃</a>    
 	      </c:if>
 	          <b onclick="alert('Ctrl+D키를 누르시면 즐겨찾기에 추가됩니다')">＃ 즐겨찾기</b>
-		</div> --%>
+		</div>
 	</div>
 
 	<div id="second">
 		<div class="logo">
-			<a href="../main/home"><h2> 관리자 페이지</h2> </a>
+			<a href="/work_admin/main/home"><h2> 관리자 페이지</h2> </a>
 		</div>
 		<div class="search">
 
@@ -156,7 +156,7 @@ footer {
 	<div id="topMenu">
 	<ul>
 	    <li><a class="menuLink" href="">회원관리</a></li>
-		<li><a class="menuLink" href="../apply_list">일자리 신청리스트 </a></li>
+		<li><a class="menuLink" href="/work_admin/apply_list">일자리 신청리스트 </a></li>
 		<li><a class="menuLink" href="">장단기 알바정보</a></li>
 		<li><a class="menuLink" href="">공지사항</a></li>
 		<li><a class="menuLink" href="">자유게시판</a></li>

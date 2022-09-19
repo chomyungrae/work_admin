@@ -8,9 +8,15 @@ public class WorkVO {
  private String workday,workname,workplace,content,writeday,start_time,close_time;
 
  private int day; // 월,화,수,목..
- 
+ private String apply;
 
 
+public String getApply() {
+	return apply;
+}
+public void setApply(String apply) {
+	this.apply = apply;
+}
 public int getPaytype() {
 	return paytype;
 }

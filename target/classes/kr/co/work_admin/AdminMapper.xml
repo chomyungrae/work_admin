@@ -4,10 +4,17 @@
   "http://mybatis.org/dtd/mybats-3-mapper.dtd">
   <mapper namespace="kr.co.work_admin.AdminMapper">
    
+   <select id="work_list" resultType="kr.co.work_admin.vo.WorkVO">
+   select * from work where day like concat('%',#{param1},'%') order by workday asc
+  </select>
+  
    <insert id="work_input_ok">
    insert into work(workday,day,workname,workplace,content,start_time,close_time,inwon,gender,pay,writeday,paytype)
    values(#{workday},#{day},#{workname},#{workplace},#{content},#{start_time},#{close_time},
    #{inwon},#{gender},#{pay},now(),#{paytype})
    </insert>
   
+   <select id="apply_list" resultType="kr.co.work_admin.vo.WorkVO">
+    select * from work where apply != ''
+   </select>
   </mapper>

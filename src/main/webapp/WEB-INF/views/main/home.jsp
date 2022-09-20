@@ -46,7 +46,7 @@
 	<section>
 	
 	<div id="fourth">
-		
+		<a href="../work_input"> 일자리 작성 </a>
 	</div>
 
 
